@@ -455,8 +455,8 @@ export namespace Database {
     password: string
   ): Promise<UUID | false> {
     if (
-      typeof username != undefined &&
-      typeof password != undefined &&
+      typeof username != "undefined" &&
+      typeof password != "undefined" &&
       username != "" &&
       password != ""
     ) {
