@@ -15,7 +15,6 @@ import { Database } from "./modules/database/database";
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const sdserver = require("http").createServer(app);
 
 // Connect to database
 Database.connectClient().then((succeeded: boolean) => {
