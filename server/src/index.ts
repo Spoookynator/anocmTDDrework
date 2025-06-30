@@ -13,11 +13,10 @@ import { WsMessage } from "@anocm/shared/dist";
 import { routeMessageAction } from "./modules/action_router/actionRouter";
 import { Database } from "./modules/database/database";
 import { UserManager } from "./modules/userManager/userManager";
-import cluster from "cluster";
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const server = require("http").createServer(app);
+const sdserver = require("http").createServer(app);
 
 // Connect to database
 Database.connectClient().then((succeeded: boolean) => {
