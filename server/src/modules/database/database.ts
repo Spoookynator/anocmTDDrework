@@ -10,7 +10,6 @@ import {
   Action,
 } from "@anocm/shared/dist";
 import { broadcastToChat } from "../message/message";
-import chat from "../../routes/v1/chat";
 const argon2 = require("argon2");
 
 export namespace Database {
