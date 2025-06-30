@@ -12,7 +12,6 @@ import WebSocket, { WebSocket as WebSocketType } from "ws";
 import { WsMessage } from "@anocm/shared/dist";
 import { routeMessageAction } from "./modules/action_router/actionRouter";
 import { Database } from "./modules/database/database";
-import { UserManager } from "./modules/userManager/userManager";
 const express = require("express");
 const cors = require("cors");
 const app = express();
