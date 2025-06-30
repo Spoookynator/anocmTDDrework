@@ -43,6 +43,8 @@ export namespace Database {
     try {
       client.connect();
     } catch (err) {
+      console.log(err);
+
       return false;
     }
 
