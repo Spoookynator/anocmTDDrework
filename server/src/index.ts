@@ -115,7 +115,7 @@ app.get("*", async (req: Request, res: Response) => {
 // Export for Greenlock
 const Greenlock = require("greenlock-express");
 
-const greenlock = Greenlock.init({
+Greenlock.init({
   packageRoot: "../",
   configDir: "./greenlock.d",
   maintainerEmail: "lucjan.lubomski@gmail.com",
