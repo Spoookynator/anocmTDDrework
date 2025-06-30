@@ -630,8 +630,7 @@ export namespace Database {
 
   export async function getChatSettings(
     chatIdInput: UUID,
-    adminId: UUID,
-    adminToken: UUID
+    adminId: UUID
   ): Promise<Chat | false> {
     try {
       if (!(await checkUserinChat(chatIdInput, adminId))) {
